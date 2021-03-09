@@ -8,7 +8,7 @@ function onYouTubeIframeAPIReady() {
 		playerVars: {
 			color: 'white',
 			//start: 
-			//autoplay: '1'
+			// autoplay: '1'
 			//playlist: 'taJ60kskkns,FG0fTKAqZ5g'
 		},
 		events: {
@@ -80,7 +80,7 @@ function pTimes(num,startT,endT,curT) {
 
 function sTimes(num,soundStarts,curT) {
 	var soundClass = 'sound' + num;
-	var b = document.querySelector('body');
+	var b = document.querySelector('body, h1');
 	if( curT > soundStarts && !b.classList.contains(soundClass)) {
 		b.classList.add(soundClass);
 	}

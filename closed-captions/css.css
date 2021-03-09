@@ -3,18 +3,15 @@ Video frame styling
 ********************************************** */
 
 #video-placeholder {
-	width: 90vw;
-	height: 80vh;
+	transition: 1s;
+	width: 95vw;
+	height: 95vh;
 	display: block;
 	margin: 0 auto;
 }
 
 /* **********************************************
-Basic mechanics
-Hide all paragraphs by default
-Show them when they receive the class 'on'
-Hide them when they receive the class 'off'
-Feel free to adjust the defaults to your needs.
+Global Styling
 ********************************************** */
 
 body {
@@ -24,18 +21,25 @@ body {
 p {
 	color: white;
 	font-size: 2em;
+	position: absolute;
+	bottom: 15%;
+	width: 100%;
+	display: block;
+	text-align: center;
 }
 
 .bodyWidth {
 	display: block;
-	width: 90vw;
 	margin: 0 auto;
+	text-align: center;
+	top: 50%;
+	bottom: 50%;
 }
 
 #closed-captions p {
 	opacity: 0;
 	transition: .05s;
-	position: absolute;
+
 }
 #closed-captions .on {
 	opacity: 1;
@@ -44,97 +48,55 @@ p {
 	transition: .2s;
 	opacity: 0;
 }
-.voice1 {
-	font-style: italic;
-}
 
 /* **********************************************
-The first paragraph, with extended timing for 
-	all siblings. Basically what it does is that
-	it shows the text after a delay, which 
-	corresponds with the time that the word is
-	spoken.
-You probably want to change the styling.
+Voices
 ********************************************** */
-.p0 span {
-	opacity: 0;
-	font-family: "brenner mono";
-}
-.p0.on span:first-of-type {
-	opacity: 1;
-	transition: 0s;
-	font-weight: 200;
-}
-.p0.on span:nth-of-type(2) {
-	opacity: 1;
-	transition: 0s .4s;
-	margin-right: -.25em;
+/* Robot men */
+.voice1 {
+	font-family: "Brenner Mono";
+	font-style: Normal;
 	font-weight: 400;
+	font-stretch: extra-condensed;
 }
-.p0.on span:nth-of-type(3) {
-	opacity: 1;
-	transition: 0s .5s;
-	margin-right: -.25em;
+
+/* Officer K / Joe */
+.voice2 {
+	font-family: "Brenner Sans";
+	font-style: Normal;
 	font-weight: 600;
 }
-.p0.on span:nth-of-type(4) {
-	opacity: 1;
-	transition: 0s .7s;
-	margin-right: -.25em;
+
+/* Fuck off, skinn-job! */
+.voice3 {
+	font-family: "Brenner Sans Condensed";
+	font-style: Italic;
 	font-weight: 800;
+	font-size: 3em;
 }
-.p0.on span:nth-of-type(5) {
-	opacity: 1;
-	transition: 0s 1.1s;
-	margin-right: -.25em;
-}
-.p0.on span:nth-of-type(6) {
-	opacity: 1;
-	transition: 0s 1.4s;
-	margin-right: -.25em;
-}
-.p0.on span:nth-of-type(7) {
-	opacity: 1;
-	transition: 0s 1.7s;
-	margin-right: -.25em;
-}
-.p0.on span:nth-of-type(8) {
-	opacity: 1;
-	transition: 0s 2s;
-}
-.p0.on span:nth-of-type(9) {
-	opacity: 1;
-	transition: 0s 3s;
-}
-.p0.on span:nth-of-type(10) {
-	opacity: 1;
-	transition: 0s 3.2s;
-}
-.p0.on span:nth-of-type(11) {
-	opacity: 1;
-	transition: 0s 3.7s;
-}
+
+/* select a specific <p> element */
+/* .p0 span {
+} */
 
 /* **********************************************
-Sounds.
-	You can style the whole body, or you can 
-	style anything within the body the moment
-	a sound starts.
+Sounds
+You can style the whole body, or you can 
+style anything within the body the moment
+a sound starts.
 *********************************************  */
 
-/* The moment the class .sound1 is added to the body, the background is yellow */
+/* The moment the class .sound1 is added to the body, the background is a fadin red color effect */
 /* Reference background color: https://www.w3schools.com/cssref/tryit.asp?filename=trycss_animatable */
 .sound1 {
-	/* background: red; */
-	/* Added the 2 for a loop. Resource: https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_animation-direction  */
 	animation: sound1 2s;
 	/* Reversing the animation */
 	animation-direction: alternate;
+	color: blue;
   }
   
   @keyframes sound1 {
 	0%   {background: black;}
-  	50%  {background: red;}
+  	50%  {background: rgb(153, 47, 47);}
   	100%  {background: black;}
   }
-  
