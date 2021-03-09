@@ -28,6 +28,18 @@ p {
 	text-align: center;
 }
 
+h1 {
+	transition: 1s;
+	opacity: 0;
+	color: white;
+	font-size: 2em;
+	position: absolute;
+	bottom: 10%;
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+
 .bodyWidth {
 	display: block;
 	margin: 0 auto;
@@ -54,7 +66,7 @@ Voices
 ********************************************** */
 /* Robot men */
 .voice1 {
-	font-family: "Brenner Mono";
+	font-family: 'Courier New', Courier, monospace;
 	font-style: Normal;
 	font-weight: 400;
 	font-stretch: extra-condensed;
@@ -62,14 +74,14 @@ Voices
 
 /* Officer K / Joe */
 .voice2 {
-	font-family: "Brenner Sans";
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	font-style: Normal;
 	font-weight: 600;
 }
 
 /* Fuck off, skinn-job! */
 .voice3 {
-	font-family: "Brenner Sans Condensed";
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	font-style: Italic;
 	font-weight: 800;
 	font-size: 3em;
@@ -92,10 +104,44 @@ a sound starts.
 	animation: sound1 2s;
 	/* Reversing the animation */
 	animation-direction: alternate;
-	color: blue;
+	/* color: blue; */
+	opacity: 1;
   }
   
   @keyframes sound1 {
+	0%   {background: black;}
+  	50%  {background: rgb(153, 47, 47);}
+  	100%  {background: black;}
+  }
+
+  .sound2 {
+	animation: sound2 2s;
+	animation-direction: alternate;
+  }
+
+  @keyframes sound2 {
+	0%   {background: black;}
+  	50%  {background: rgb(153, 47, 47);}
+  	100%  {background: black;}
+  }
+
+  .sound3 {
+	animation: sound3 2s;
+	animation-direction: alternate;
+  }
+
+  @keyframes sound3 {
+	0%   {background: black;}
+  	50%  {background: rgb(153, 47, 47);}
+  	100%  {background: black;}
+  }
+
+  .sound4 {
+	animation: sound4 2s;
+	animation-direction: alternate;
+  }
+
+  @keyframes sound4 {
 	0%   {background: black;}
   	50%  {background: rgb(153, 47, 47);}
   	100%  {background: black;}
