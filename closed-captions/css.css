@@ -5,7 +5,7 @@ Video frame styling
 #video-placeholder {
 	transition: 1s;
 	width: 95vw;
-	height: 95vh;
+	height: 90vh;
 	display: block;
 	margin: 0 auto;
 }
@@ -22,7 +22,7 @@ p {
 	color: white;
 	font-size: 2em;
 	position: absolute;
-	bottom: 15%;
+	bottom: 10%;
 	width: 100%;
 	display: block;
 	text-align: center;
@@ -70,10 +70,26 @@ Voices
 	font-style: Normal;
 	font-weight: 400;
 	font-stretch: extra-condensed;
+	font-size: 1.5em !important;
 }
 
 /* Officer K / Joe */
 .voice2 {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-style: Normal;
+	font-weight: 600;
+	color: rgb(47, 152, 201);
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.voice2f {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-style: Normal;
+	font-weight: 400;
+	color: rgb(170, 170, 170);
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.voice1n{
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	font-style: Normal;
 	font-weight: 600;
@@ -84,7 +100,7 @@ Voices
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	font-style: Italic;
 	font-weight: 800;
-	font-size: 3em;
+	font-size: 1.5em;
 }
 
 /* select a specific <p> element */
@@ -94,7 +110,7 @@ Voices
 /* **********************************************
 Sounds
 You can style the whole body, or you can 
-style anything within the body the moment
+style anything withsin the body the moment
 a sound starts.
 *********************************************  */
 
