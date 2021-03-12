@@ -3,11 +3,11 @@ var player;
 function onYouTubeIframeAPIReady() {
 	player = new YT.Player('video-placeholder', {
 		width: 600,
-		height: 400,
+		height: 200,
 		videoId: 'vrP-_T-h9YM',
 		playerVars: {
 			color: 'white',
-			//start: 
+			// start: 
 			// autoplay: '1'
 			//playlist: 'taJ60kskkns,FG0fTKAqZ5g'
 		},
@@ -78,16 +78,45 @@ function pTimes(num,startT,endT,curT) {
 	}
 }
 
+// ****************************************
+// Add class to Body + H1 Functions
+// ****************************************
+
+// function sTimes(num,soundStarts,curT) {
+// 	var soundClass = 'sound' + num;
+// 	var b = document.querySelector('body');
+// 	if( curT > soundStarts && !b.classList.contains(soundClass)) {
+// 		b.classList.add(soundClass);
+// 	}
+// 	if( curT < soundStarts && b.classList.contains(soundClass)) {
+// 		b.classList.remove(soundClass);
+// 	}
+// }
+
 function sTimes(num,soundStarts,curT) {
-	var soundClass = 'sound' + num;
-	var b = document.querySelector('body, h1');
-	if( curT > soundStarts && !b.classList.contains(soundClass)) {
-		b.classList.add(soundClass);
+	var soundBodyClass = 'soundBody' + num;
+	var b = document.querySelector('body');
+	if( curT > soundStarts && !b.classList.contains(soundBodyClass)) {
+		b.classList.add(soundBodyClass);
 	}
-	if( curT < soundStarts && b.classList.contains(soundClass)) {
-		b.classList.remove(soundClass);
+	if( curT < soundStarts && b.classList.contains(soundBodyClass)) {
+		b.classList.remove(soundBodyClass);
 	}
 }
+
+// function stTimes(num,soundStarts,curT) {
+// 	var soundClass = 'soundText' + num;
+// 	var b = document.querySelector('h1');
+// 	if( curT > soundStarts && !b.classList.contains(soundClass)) {
+// 		b.classList.add(soundClass);
+// 	}
+// 	if( curT < soundStarts && b.classList.contains(soundClass)) {
+// 		b.classList.remove(soundClass);
+// 	}
+// }
+
+// ****************************************
+
 
 (function() {
 	/**

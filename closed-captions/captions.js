@@ -21,54 +21,57 @@ captions[14] = ['38.6','38.9'];
 captions[15] = ['39.1','39.9'];
 	//When you're not performing your duties, do they keep you in a little box?
 captions[16] = ['39.9','42.8'];
-captions[17] = ['42.8','43.1'];
-captions[18] = ['43.3','44.1'];
+captions[17] = ['39.9','42.8'];
+captions[18] = ['42.8','43.1'];
+captions[19] = ['43.3','44.1'];
 	//Interlinked
-captions[19] = ['44','44.5'];
-captions[20] = ['45','45.7'];
+captions[20] = ['44','44.5'];
+captions[21] = ['45','45.7'];
 	//What's it like to hold the hand of someone you love?
-captions[21] = ['45.7','47.6'];
-captions[22] = ['47.6','48.1'];
-captions[23] = ['48.3','49'];
+captions[22] = ['45.7','47.6'];
+captions[23] = ['47.6','48.1'];
+captions[24] = ['48.3','49'];
 	//Did they teach you how to feel, finger to finger?
-captions[24] = ['49.1','50.9'];
-captions[25] = ['50.9','51.4'];
-captions[26] = ['51.6','52.3'];
+captions[25] = ['49.1','50.9'];
+captions[26] = ['50.9','51.4'];
+captions[27] = ['51.6','52.3'];
 	//Do you long for having your heart interlinked?
-captions[27] = ['52.3','54'];
-captions[28] = ['54','54.5'];
-captions[29] = ['54.7','55.4'];
+captions[28] = ['52.3','54'];
+captions[29] = ['54','54.5'];
+captions[30] = ['54.7','55.4'];
 	//Do you dream about being interlinked?
-captions[30] = ['55.4','57.2'];
-captions[31] = ['57.2','58'];
+captions[31] = ['55.4','57.2'];
+captions[32] = ['57.2','58'];
 	//What's it like to hold your child in your arms?
-captions[32] = ['58','59.8'];
-captions[33] = ['59.8','60.3'];
-captions[34] = ['60.3','61'];
+captions[33] = ['58','59.8'];
+captions[34] = ['59.8','60.3'];
+captions[35] = ['60.3','61'];
 	//Do you feel that there's a part of you that's missing?
-captions[35] = ['61','62.7'];
-captions[36] = ['62.7','63.2'];
-captions[37] = ['63.2','63.9'];
+captions[36] = ['61','62.7'];
+captions[37] = ['61','62.7'];
+captions[38] = ['62.7','63.2'];
+captions[39] = ['63.2','63.9'];
 	//Within cells interlinked.
-captions[38] = ['63.9','65.2'];
-captions[39] = ['65.2','66.6'];
+captions[40] = ['63.9','65.2'];
+captions[41] = ['65.2','66.6'];
 	//Why don't you say that three times: "within cells interlinked".
-captions[40] = ['66.6','69.1'];
+captions[42] = ['66.6','69.1'];
+captions[43] = ['66.6','69.1'];
 
-captions[41] = ['69.1','70.5'];
-captions[42] = ['70.6','72.2'];
-captions[43] = ['72.3','74.2'];
+captions[44] = ['69.1','70.4'];
+captions[45] = ['70.7','72.1'];
+captions[46] = ['72.4','74.2'];
 	// We're done.
-captions[44] = ['77.1','78.7'];
-captions[45] = ['80','81.738'];
-captions[46] = ['82.2','84.3'];
-captions[47] = ['85.4','87'];
+captions[47] = ['77.1','78.7'];
+captions[48] = ['80','81.738'];
+captions[49] = ['82.2','84.3'];
+captions[50] = ['85.4','87'];
 
 //end manual labour
-captions[48] = ['87.68','88.18'];
-captions[49] = ['88.38','88.88'];
-// Have you ever been in an institution. Cells
-captions[50] = ['88.88','91.24'];
+// captions[48] = ['87.68','88.18'];
+// captions[49] = ['88.38','88.88'];
+// // Have you ever been in an institution. Cells
+// captions[50] = ['88.88','91.24'];
 captions[51] = ['91.34','91.84'];
 captions[52] = ['91.98','95.52'];
 // -Cells

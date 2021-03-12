@@ -1,4 +1,68 @@
 /* **********************************************
+Color ROOT
+********************************************** */
+
+:root {
+	--color-background: rgb(0, 0, 0);
+	/* Beginning drum colours */
+	--color-drumsBlack: rgb(0, 0, 0);
+	--color-drumsGrey: rgb(37, 37, 37);
+}
+
+/* **********************************************
+Global Styling
+********************************************** */
+
+body {
+	background-color: var(--color-background);
+}
+
+.line2 {
+	bottom: 21.5% !important;
+}
+
+#closed-captions {
+	display: flex;
+  	justify-content: center;
+}
+
+#closed-captions p {
+	opacity: 0;
+	transition: .05s;
+	color: white;
+	font-size: 2em;
+	position: absolute;
+	bottom: 25%;
+	background-color: black;
+	padding: 0 10px;
+}
+
+#closed-captions .on {
+	opacity: 1;
+}
+#closed-captions .off {
+	transition: .2s;
+	opacity: 0;
+}
+
+#sound-expression h1 {
+	transition: 1s;
+	opacity: 0;
+	color: white;
+	font-size: 2em;
+	position: absolute;
+	bottom: 10%;
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+
+.soundText1 {
+	color: yellow;
+	opacity: 1;
+}
+
+/* **********************************************
 Video frame styling
 ********************************************** */
 
@@ -8,57 +72,7 @@ Video frame styling
 	height: 90vh;
 	display: block;
 	margin: 0 auto;
-}
-
-/* **********************************************
-Global Styling
-********************************************** */
-
-body {
-	background-color: black;
-}
-
-p {
-	color: white;
-	font-size: 2em;
-	position: absolute;
-	bottom: 10%;
-	width: 100%;
-	display: block;
-	text-align: center;
-}
-
-h1 {
-	transition: 1s;
-	opacity: 0;
-	color: white;
-	font-size: 2em;
-	position: absolute;
-	bottom: 10%;
-	width: 100%;
-	display: block;
-	text-align: center;
-}
-
-.bodyWidth {
-	display: block;
-	margin: 0 auto;
-	text-align: center;
-	top: 50%;
-	bottom: 50%;
-}
-
-#closed-captions p {
-	opacity: 0;
-	transition: .05s;
-
-}
-#closed-captions .on {
-	opacity: 1;
-}
-#closed-captions .off {
-	transition: .2s;
-	opacity: 0;
+	clip-path: inset(120px 45px);
 }
 
 /* **********************************************
@@ -70,7 +84,7 @@ Voices
 	font-style: Normal;
 	font-weight: 400;
 	font-stretch: extra-condensed;
-	font-size: 1.5em !important;
+	/* font-size: 1.5em !important; */
 }
 
 /* Officer K / Joe */
@@ -79,7 +93,6 @@ Voices
 	font-style: Normal;
 	font-weight: 600;
 	color: rgb(47, 152, 201);
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .voice2f {
@@ -116,49 +129,70 @@ a sound starts.
 
 /* The moment the class .sound1 is added to the body, the background is a fadin red color effect */
 /* Reference background color: https://www.w3schools.com/cssref/tryit.asp?filename=trycss_animatable */
-.sound1 {
-	animation: sound1 2s;
+
+/* **********************************************
+Added classes to the <body>
+*********************************************  */
+
+.soundBody0 {
+	animation: soundBody0 9s;
 	/* Reversing the animation */
 	animation-direction: alternate;
-	/* color: blue; */
 	opacity: 1;
   }
   
-  @keyframes sound1 {
+  @keyframes soundBody0 {
+	0%   	{background: var(--color-drumsBlack)};
+  	11%  	{background: var(--color-drumsBlack)};
+  	22%  	{background: var(--color-drumsGrey)};
+	33%   	{background: var(--color-drumsBlack)};
+  	44%  	{background: var(--color-drumsGrey)};
+  	55%  	{background: var(--color-drumsBlack)};
+	66%   	{background: var(--color-drumsGrey)};
+	77%  	{background: var(--color-drumsBlack)};
+	88%   	{background: var(--color-drumsGrey)};
+	100%   	{background: var(--color-drumsBlack)};
+  }
+
+/* Hard Alarm */
+.soundBody1 {
+	animation: soundBody1 2s;
+	/* Reversing the animation */
+	animation-direction: alternate;
+	opacity: 1;
+  }
+  
+  @keyframes soundBody1 {
 	0%   {background: black;}
-  	50%  {background: rgb(153, 47, 47);}
+  	50%  {background: rgb(146, 53, 53);}
   	100%  {background: black;}
   }
 
-  .sound2 {
-	animation: sound2 2s;
+/* Soft Alarm */
+.soundBody2 {
+	animation: soundBody2 2s;
+	/* Reversing the animation */
+	animation-direction: alternate;
+	opacity: 1;
+  }
+  
+  @keyframes soundBody2 {
+	0%   {background: black;}
+  	50%  {background: rgb(32, 19, 19);}
+  	100%  {background: black;}
+  }
+
+
+
+
+  /* High Upcoming Tone */
+  .soundBody10 {
+	animation: sound10 31s;
 	animation-direction: alternate;
   }
 
-  @keyframes sound2 {
+  @keyframes sound10 {
 	0%   {background: black;}
-  	50%  {background: rgb(153, 47, 47);}
-  	100%  {background: black;}
-  }
-
-  .sound3 {
-	animation: sound3 2s;
-	animation-direction: alternate;
-  }
-
-  @keyframes sound3 {
-	0%   {background: black;}
-  	50%  {background: rgb(153, 47, 47);}
-  	100%  {background: black;}
-  }
-
-  .sound4 {
-	animation: sound4 2s;
-	animation-direction: alternate;
-  }
-
-  @keyframes sound4 {
-	0%   {background: black;}
-  	50%  {background: rgb(153, 47, 47);}
-  	100%  {background: black;}
+  	98%  {background: white;}
+	100%   {background: black;}
   }
