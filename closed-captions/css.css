@@ -6,7 +6,7 @@ Color ROOT
 	--color-background: rgb(0, 0, 0);
 	/* Beginning drum colours */
 	--color-drumsBlack: rgb(0, 0, 0);
-	--color-drumsGrey: rgb(37, 37, 37);
+	--color-drumsGrey: rgb(27, 27, 27);
 }
 
 /* **********************************************
@@ -142,16 +142,16 @@ Added classes to the <body>
   }
   
   @keyframes soundBody0 {
-	0%   	{background: var(--color-drumsBlack)};
-  	11%  	{background: var(--color-drumsBlack)};
-  	22%  	{background: var(--color-drumsGrey)};
-	33%   	{background: var(--color-drumsBlack)};
-  	44%  	{background: var(--color-drumsGrey)};
-  	55%  	{background: var(--color-drumsBlack)};
-	66%   	{background: var(--color-drumsGrey)};
-	77%  	{background: var(--color-drumsBlack)};
-	88%   	{background: var(--color-drumsGrey)};
-	100%   	{background: var(--color-drumsBlack)};
+	0%   	{background: var(--color-drumsBlack);}
+  	11%  	{background: var(--color-drumsBlack);}
+  	22%  	{background: var(--color-drumsGrey);}
+	33%   	{background: var(--color-drumsBlack);}
+  	44%  	{background: var(--color-drumsGrey);}
+  	55%  	{background: var(--color-drumsBlack);}
+	66%   	{background: var(--color-drumsGrey);}
+	77%  	{background: var(--color-drumsBlack);}
+	88%   	{background: var(--color-drumsGrey);}
+	100%   	{background: var(--color-drumsBlack);}
   }
 
 /* Hard Alarm */
