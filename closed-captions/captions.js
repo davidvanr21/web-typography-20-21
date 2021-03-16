@@ -67,24 +67,46 @@ captions[48] = ['80','81.738'];
 captions[49] = ['82.2','84.3'];
 captions[50] = ['85.4','87'];
 
+// Sounds
+// Cinematic Drums
+captions[51] = ['0.5','9'];
+// Loud Alarm
+captions[52] = ['9','10.5'];
+// Soft Alarm
+captions[53] = ['12','15.1'];
+// Background noices
+captions[54] = ['15.1','16.5'];
+// Door opens
+captions[55] = ['16.5','18'];
+// Whispering Swearing
+captions[56] = ['23.3','25.8'];
+// Door opens
+captions[57] = ['31.5','33'];
+// Begin of high tone
+captions[58] = ['34','36'];
+// Upcoming high tone
+captions[59] = ['45','47.5'];
+// Stopped high tone
+captions[60] = ['75','78'];
+
 //end manual labour
 // captions[48] = ['87.68','88.18'];
 // captions[49] = ['88.38','88.88'];
 // // Have you ever been in an institution. Cells
 // captions[50] = ['88.88','91.24'];
-captions[51] = ['91.34','91.84'];
-captions[52] = ['91.98','95.52'];
+// captions[51] = ['91.34','91.84'];
+// captions[52] = ['91.98','95.52'];
 // -Cells
-captions[53] = ['95.52','96.02'];
-captions[54] = ['96.12','100.2'];
-captions[55] = ['100.3','102.4'];
+// captions[53] = ['95.52','96.02'];
+// captions[54] = ['96.12','100.2'];
+// captions[55] = ['100.3','102.4'];
 // -Interlinked
-captions[56] = ['102.64','103.3'];
-captions[57] = ['103.3','104.38'];
-captions[58] = ['104.54','105.42'];
+// captions[56] = ['102.64','103.3'];
+// captions[57] = ['103.3','104.38'];
+// captions[58] = ['104.54','105.42'];
 // Dreadfully
-captions[59] = ['105.42','105.92'];
-captions[60] = ['106','106.5'];
+// captions[59] = ['105.42','105.92'];
+// captions[60] = ['106','106.5'];
 captions[61] = ['106.64','109.28'];
 // -Dreadfully
 captions[62] = ['109.28','109.8'];

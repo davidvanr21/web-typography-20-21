@@ -4,9 +4,9 @@ Color ROOT
 
 :root {
 	--color-background: rgb(0, 0, 0);
-	/* Beginning drum colours */
-	--color-drumsBlack: rgb(0, 0, 0);
+	--color-black: rgb(0, 0, 0);
 	--color-drumsGrey: rgb(27, 27, 27);
+	--color-darkGreen: rgb(27, 121, 77);
 }
 
 /* **********************************************
@@ -33,7 +33,7 @@ body {
 	font-size: 2em;
 	position: absolute;
 	bottom: 25%;
-	background-color: black;
+	background-color: rgba(0, 0, 0, 0.6);
 	padding: 0 10px;
 }
 
@@ -45,21 +45,12 @@ body {
 	opacity: 0;
 }
 
-#sound-expression h1 {
-	transition: 1s;
-	opacity: 0;
-	color: white;
-	font-size: 2em;
-	position: absolute;
-	bottom: 10%;
-	width: 100%;
-	display: block;
-	text-align: center;
-}
-
-.soundText1 {
-	color: yellow;
-	opacity: 1;
+.sound-expression {
+	/* opacity: 0;
+	transition: .05s; */
+	color: rgb(207, 207, 207) !important;
+	bottom: 13% !important;
+	font-family: 'Courier New', Courier, monospace !important;
 }
 
 /* **********************************************
@@ -134,59 +125,113 @@ a sound starts.
 Added classes to the <body>
 *********************************************  */
 
-.soundBody0 {
-	animation: soundBody0 9s;
+.sound0 {
+	animation: sound0 9s;
 	/* Reversing the animation */
 	animation-direction: alternate;
 	opacity: 1;
   }
   
-  @keyframes soundBody0 {
-	0%   	{background: var(--color-drumsBlack);}
-  	11%  	{background: var(--color-drumsBlack);}
+  @keyframes sound0 {
+	0%   	{background: var(--color-black);}
+  	11%  	{background: var(--color-black);}
   	22%  	{background: var(--color-drumsGrey);}
-	33%   	{background: var(--color-drumsBlack);}
+	33%   	{background: var(--color-black);}
   	44%  	{background: var(--color-drumsGrey);}
-  	55%  	{background: var(--color-drumsBlack);}
+  	55%  	{background: var(--color-black);}
 	66%   	{background: var(--color-drumsGrey);}
-	77%  	{background: var(--color-drumsBlack);}
+	77%  	{background: var(--color-black);}
 	88%   	{background: var(--color-drumsGrey);}
-	100%   	{background: var(--color-drumsBlack);}
+	100%   	{background: var(--color-black);}
   }
 
 /* Hard Alarm */
-.soundBody1 {
-	animation: soundBody1 2s;
+.sound1 {
+	animation: sound1 2s;
 	/* Reversing the animation */
 	animation-direction: alternate;
 	opacity: 1;
   }
   
-  @keyframes soundBody1 {
+  @keyframes sound1 {
 	0%   {background: black;}
   	50%  {background: rgb(146, 53, 53);}
   	100%  {background: black;}
   }
 
 /* Soft Alarm */
-.soundBody2 {
-	animation: soundBody2 2s;
+.sound2 {
+	animation: sound2 2s;
 	/* Reversing the animation */
 	animation-direction: alternate;
 	opacity: 1;
   }
   
-  @keyframes soundBody2 {
+  @keyframes sound2 {
 	0%   {background: black;}
   	50%  {background: rgb(32, 19, 19);}
   	100%  {background: black;}
   }
 
+/* Background noise with door opens*/
+.sound3 {
+	animation: sound3 2s;
+	/* Reversing the animation */
+	animation-direction: alternate;
+	opacity: 1;
+  }
+  
+  @keyframes sound3 {
+	0%   	{background: var(--color-black);}
+  	11%  	{background: var(--color-black);}
+  	22%  	{background: var(--color-drumsGrey);}
+	33%   	{background: var(--color-black);}
+  	44%  	{background: var(--color-drumsGrey);}
+  	55%  	{background: var(--color-black);}
+	66%   	{background: var(--color-drumsGrey);}
+	77%  	{background: var(--color-black);}
+	88%   	{background: var(--color-drumsGrey);}
+	100%   	{background: var(--color-black);}
+  }
 
+  /* Door opens */
+.sound4 {
+	animation: sound4 2s;
+	opacity: 1;
+}
+  
+  @keyframes sound4 {
+	0%   {background: black;}
+  	50%  {background: rgb(16, 34, 23);}
+  	100%  {background: black;}
+  }
+
+  /* Door opens 2 */
+.sound6 {
+	animation: sound6 2s;
+	opacity: 1;
+}
+  
+  @keyframes sound6 {
+	0%   {background: black;}
+  	50%  {background: rgb(16, 34, 23);}
+  	100%  {background: black;}
+  }
+
+.sound8 {
+	animation: sound8 2s;
+	opacity: 1;
+}
+  
+  @keyframes sound8 {
+	0%   {background: black;}
+  	50%  {background: rgb(16, 34, 23);}
+  	100%  {background: black;}
+  }
 
 
   /* High Upcoming Tone */
-  .soundBody10 {
+  .sound10 {
 	animation: sound10 31s;
 	animation-direction: alternate;
   }

@@ -79,22 +79,11 @@ function pTimes(num,startT,endT,curT) {
 }
 
 // ****************************************
-// Add class to Body + H1 Functions
+// Add class to Body with each sound
 // ****************************************
 
-// function sTimes(num,soundStarts,curT) {
-// 	var soundClass = 'sound' + num;
-// 	var b = document.querySelector('body');
-// 	if( curT > soundStarts && !b.classList.contains(soundClass)) {
-// 		b.classList.add(soundClass);
-// 	}
-// 	if( curT < soundStarts && b.classList.contains(soundClass)) {
-// 		b.classList.remove(soundClass);
-// 	}
-// }
-
 function sTimes(num,soundStarts,curT) {
-	var soundBodyClass = 'soundBody' + num;
+	var soundBodyClass = 'sound' + num;
 	var b = document.querySelector('body');
 	if( curT > soundStarts && !b.classList.contains(soundBodyClass)) {
 		b.classList.add(soundBodyClass);
@@ -103,17 +92,6 @@ function sTimes(num,soundStarts,curT) {
 		b.classList.remove(soundBodyClass);
 	}
 }
-
-// function stTimes(num,soundStarts,curT) {
-// 	var soundClass = 'soundText' + num;
-// 	var b = document.querySelector('h1');
-// 	if( curT > soundStarts && !b.classList.contains(soundClass)) {
-// 		b.classList.add(soundClass);
-// 	}
-// 	if( curT < soundStarts && b.classList.contains(soundClass)) {
-// 		b.classList.remove(soundClass);
-// 	}
-// }
 
 // ****************************************
 
@@ -165,4 +143,3 @@ function sTimes(num,soundStarts,curT) {
 		};
 	}
 })();
-
