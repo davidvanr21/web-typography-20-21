@@ -155,5 +155,11 @@ captions[100] = ['128.18','130.14'];
 captions[101] = ['132.58','135'];
 
 // Sound-Expressions scene 2
-// Cinematic Drums
-captions[101] = ['132.58','135'];
+// Soft cinematic music
+captions[102] = ['86','91'];
+// Notification
+captions[103] = ['103','105'];
+// Loud cinematic music
+captions[103] = ['110','115'];
+// Loud music fading-out
+captions[103] = ['128','130'];

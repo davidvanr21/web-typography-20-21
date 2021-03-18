@@ -75,7 +75,6 @@ Voices Scene 1
 	font-stretch: extra-condensed;
 }
 
-/* Robot voice Normal */
 .voice1n{
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	font-style: Normal;
@@ -95,7 +94,7 @@ Voices Scene 1
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	font-style: Italic;
 	font-weight: 800;
-	font-size: 1.5em;
+	font-size: 1.3em;
 }
 
 /* **********************************************
@@ -119,19 +118,9 @@ Voices Scene 2
   100% {filter: url("#squiggly-1");}
 }
 
-/* select a specific <p> element */
+/* Select a specific <p> element */
 /* .p0 span {
 } */
-
-/* **********************************************
-Sounds
-You can style the whole body, or you can 
-style anything withsin the body the moment
-a sound starts.
-*********************************************  */
-
-/* The moment the class .sound1 is added to the body, the background is a fadin red color effect */
-/* Reference background color: https://www.w3schools.com/cssref/tryit.asp?filename=trycss_animatable */
 
 /* **********************************************
 Added classes to the <body>
@@ -275,20 +264,27 @@ Added classes to the <body>
   /* Source background animation: https://codepen.io/quadbaup/pen/yLewNZO */
   /* Changed the horizontal animation to vertical */
   .sound11 {
-	animation: animateBg 20s linear;
+	animation: sound11 20s linear;
 	background-image: linear-gradient(
 		90deg,
 		var(--color-black),var(--color-black),#131031,#2B1F39,#7A3738,#E7A42D,
 		#DC691F,#5e213a,#2B1F39,#0b0a1f,var(--color-black),var(--color-black));
 	background-size: 1100% 1000%;
-	/* height: 100vh;
-	width: 100vw; */
   }
-  @keyframes animateBg {
+  @keyframes sound11 {
 	0% { background-position: 0% 0%; }
 	100% { background-position: 100% 0%; }
   }
 
   .sound12 {
-	background-color: red !important;
+	animation: sound12 10s linear;
+	background-image: linear-gradient(
+		90deg,
+		var(--color-black),var(--color-black),#131031,#2B1F39,#7A3738,#E7A42D,
+		#DC691F,#5e213a,#2B1F39,#0b0a1f,var(--color-black),var(--color-black));
+	background-size: 1100% 1000%;
+  }
+  @keyframes sound12 {
+	0% { background-position: 100% 0%; }
+	100% { background-position: 0% 0%; }
   }
