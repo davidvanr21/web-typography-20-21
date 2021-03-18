@@ -143,3 +143,12 @@ function sTimes(num,soundStarts,curT) {
 		};
 	}
 })();
+
+var texto = document.querySelector('.transition').innerHTML;
+document.querySelector('.transition').innerHTML = "";
+texto.split('').forEach(function(e){
+  e = e == " " ? "&nbsp;" : e;
+  var span = document.createElement('span');
+  span.innerHTML = e;
+  document.querySelector('.transition').appendChild(span);
+});

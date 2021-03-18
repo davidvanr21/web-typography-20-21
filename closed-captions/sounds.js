@@ -12,7 +12,8 @@ sounds = [
 	32,
 	34,
 	45,
-	86
+	86,
+	103
 ];
 
 // sounds = [
@@ -29,6 +30,6 @@ sounds = [
 // 	34, 	[Begin of Hight Tone]9
 // 	45, 	[Upcoming high tone]10
 // Scene 2
-// 	86, 	[Cinematic Constructive Music, Wave feeling, ]
-// 	143, 	[Notification] 
+// 	86, 	[first sweep][Cinematic Constructive Music, Wave feeling, Scene 2 starts ] 11 2:09 stop het > 129
+// 103		[]12
 // ]; 

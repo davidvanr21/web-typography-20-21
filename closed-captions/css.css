@@ -6,7 +6,7 @@ Color ROOT
 	--color-background: rgb(0, 0, 0);
 	--color-black: rgb(0, 0, 0);
 	--color-drumsGrey: rgb(27, 27, 27);
-	--color-darkGreen: rgb(27, 121, 77);
+	--color-darkGreen: rgb(30, 156, 98);
 }
 
 /* **********************************************
@@ -46,8 +46,6 @@ body {
 }
 
 .sound-expression {
-	/* opacity: 0;
-	transition: .05s; */
 	color: rgb(207, 207, 207) !important;
 	bottom: 13% !important;
 	font-family: 'Courier New', Courier, monospace !important;
@@ -67,7 +65,7 @@ Video frame styling
 }
 
 /* **********************************************
-Voices
+Voices Scene 1
 ********************************************** */
 /* Robot men */
 .voice1 {
@@ -75,7 +73,13 @@ Voices
 	font-style: Normal;
 	font-weight: 400;
 	font-stretch: extra-condensed;
-	/* font-size: 1.5em !important; */
+}
+
+/* Robot voice Normal */
+.voice1n{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-style: Normal;
+	font-weight: 600;
 }
 
 /* Officer K / Joe */
@@ -83,20 +87,7 @@ Voices
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	font-style: Normal;
 	font-weight: 600;
-	color: rgb(47, 152, 201);
-}
-
-.voice2f {
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	font-style: Normal;
-	font-weight: 400;
-	color: rgb(170, 170, 170);
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-.voice1n{
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	font-style: Normal;
-	font-weight: 600;
+	color: rgb(204, 189, 51) !important;
 }
 
 /* Fuck off, skinn-job! */
@@ -105,6 +96,27 @@ Voices
 	font-style: Italic;
 	font-weight: 800;
 	font-size: 1.5em;
+}
+
+/* **********************************************
+Voices Scene 2
+********************************************** */
+
+.voice2Scene2 {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-style: Normal;
+	font-weight: 400;
+	color: rgb(204, 189, 51) !important;
+}
+
+/* Squiggly Text Recourse: https://codepen.io/lbebber/pen/KwGEQv */
+.squiggly {
+    animation: squiggly-anim 0.34s linear infinite;
+}
+
+@keyframes squiggly-anim {
+  0% {filter: url("#squiggly-0");}
+  100% {filter: url("#squiggly-1");}
 }
 
 /* select a specific <p> element */
@@ -162,21 +174,19 @@ Added classes to the <body>
 /* Soft Alarm */
 .sound2 {
 	animation: sound2 2s;
-	/* Reversing the animation */
 	animation-direction: alternate;
 	opacity: 1;
   }
   
   @keyframes sound2 {
 	0%   {background: black;}
-  	50%  {background: rgb(32, 19, 19);}
+  	50%  {background: rgb(58, 6, 6);}
   	100%  {background: black;}
   }
 
 /* Background noise with door opens*/
 .sound3 {
 	animation: sound3 2s;
-	/* Reversing the animation */
 	animation-direction: alternate;
 	opacity: 1;
   }
@@ -218,6 +228,26 @@ Added classes to the <body>
   	100%  {background: black;}
   }
 
+  .sound7 {
+	animation: sound7 2s;
+	/* Reversing the animation */
+	animation-direction: alternate;
+	opacity: 1;
+  }
+  
+  @keyframes sound7 {
+	0%   	{background: var(--color-black);}
+  	11%  	{background: var(--color-black);}
+  	22%  	{background: var(--color-drumsGrey);}
+	33%   	{background: var(--color-black);}
+  	44%  	{background: var(--color-drumsGrey);}
+  	55%  	{background: var(--color-black);}
+	66%   	{background: var(--color-drumsGrey);}
+	77%  	{background: var(--color-black);}
+	88%   	{background: var(--color-drumsGrey);}
+	100%   	{background: var(--color-black);}
+  }
+
 .sound8 {
 	animation: sound8 2s;
 	opacity: 1;
@@ -240,4 +270,25 @@ Added classes to the <body>
 	0%   {background: black;}
   	98%  {background: white;}
 	100%   {background: black;}
+  }
+
+  /* Source background animation: https://codepen.io/quadbaup/pen/yLewNZO */
+  /* Changed the horizontal animation to vertical */
+  .sound11 {
+	animation: animateBg 20s linear;
+	background-image: linear-gradient(
+		90deg,
+		var(--color-black),var(--color-black),#131031,#2B1F39,#7A3738,#E7A42D,
+		#DC691F,#5e213a,#2B1F39,#0b0a1f,var(--color-black),var(--color-black));
+	background-size: 1100% 1000%;
+	/* height: 100vh;
+	width: 100vw; */
+  }
+  @keyframes animateBg {
+	0% { background-position: 0% 0%; }
+	100% { background-position: 100% 0%; }
+  }
+
+  .sound12 {
+	background-color: red !important;
   }
