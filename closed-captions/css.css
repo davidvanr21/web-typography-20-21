@@ -113,6 +113,11 @@ Voices Scene 2
     animation: squiggly-anim 0.34s linear infinite;
 }
 
+.dark {
+	font-weight: 800;
+	color: rgb(235, 152, 152);
+}
+
 @keyframes squiggly-anim {
   0% {filter: url("#squiggly-0");}
   100% {filter: url("#squiggly-1");}
@@ -248,7 +253,6 @@ Added classes to the <body>
   	100%  {background: black;}
   }
 
-
   /* High Upcoming Tone */
   .sound10 {
 	animation: sound10 31s;
@@ -267,8 +271,8 @@ Added classes to the <body>
 	animation: sound11 20s linear;
 	background-image: linear-gradient(
 		90deg,
-		var(--color-black),var(--color-black),#131031,#2B1F39,#7A3738,#E7A42D,
-		#DC691F,#5e213a,#2B1F39,#0b0a1f,var(--color-black),var(--color-black));
+		var(--color-black),var(--color-black),#131031,#2B1F39,#7A3738,#c28825,
+		#ad5924,#5e213a,#2B1F39,#0b0a1f,var(--color-black),var(--color-black));
 	background-size: 1100% 1000%;
   }
   @keyframes sound11 {
@@ -277,14 +281,26 @@ Added classes to the <body>
   }
 
   .sound12 {
-	animation: sound12 10s linear;
+	animation: sound12 9s linear;
 	background-image: linear-gradient(
 		90deg,
-		var(--color-black),var(--color-black),#131031,#2B1F39,#7A3738,#E7A42D,
-		#DC691F,#5e213a,#2B1F39,#0b0a1f,var(--color-black),var(--color-black));
+		var(--color-black),var(--color-black),#131031,#7a4c37,#e6dccb,#f3e7d2,
+		#ffffff,#E7A42D,#7A3738,#131031,var(--color-black),var(--color-black));
 	background-size: 1100% 1000%;
   }
   @keyframes sound12 {
 	0% { background-position: 100% 0%; }
 	100% { background-position: 0% 0%; }
+  }
+  .sound13 {
+	animation: sound13 7s linear;
+	background-image: linear-gradient(
+		90deg,
+		var(--color-black),var(--color-black),#131031,#2B1F39,#c99755,#f0dab5,
+		#eed5c6,#5e213a,#2B1F39,#0b0a1f,var(--color-black),var(--color-black));
+	background-size: 1100% 1000%;
+  }
+  @keyframes sound13 {
+	0% { background-position: 0% 0%; }
+	100% { background-position: 100% 0%; }
   }

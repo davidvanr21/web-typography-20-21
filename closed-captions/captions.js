@@ -158,8 +158,8 @@ captions[101] = ['132.58','135'];
 // Soft cinematic music
 captions[102] = ['86','91'];
 // Notification
-captions[103] = ['103','105'];
+captions[103] = ['103','107'];
 // Loud cinematic music
-captions[103] = ['110','115'];
-// Loud music fading-out
-captions[103] = ['128','130'];
+captions[104] = ['113','117'];
+// Music Stopped
+captions[105] = ['129','132'];
