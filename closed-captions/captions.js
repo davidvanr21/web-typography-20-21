@@ -3,7 +3,7 @@ SCENE 1
 ********************************************** */
 
 captions[0] = ['3.8','8.1'];
-captions[1] = ['8.1','9'];
+captions[1] = ['8.1','10'];
 captions[2] = ['10.8','12.5'];
 	//And blood-black nothingness began to spin
 captions[3] = ['12.5','15.6'];
