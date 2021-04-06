@@ -61,7 +61,7 @@ Video frame styling
 	height: 90vh;
 	display: block;
 	margin: 0 auto;
-	clip-path: inset(120px 45px);
+	/* clip-path: inset(120px 45px); */
 }
 
 /* **********************************************
